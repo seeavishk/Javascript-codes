@@ -1,0 +1,22 @@
+//difference between let,const,var
+// console.log("let,var,const")
+// var a=6
+// var b=8
+// var k=null
+
+// {var b='this'
+// console.log(b)
+// }
+// console.log(b)
+//***********cant redeclare the let and the constn */
+console.log("let,var,const")
+let a=6
+let b=8
+let k=null
+const m="aviral"
+
+{let b='this'
+console.log(b)
+}
+console.log(b)
+console.log(m)
