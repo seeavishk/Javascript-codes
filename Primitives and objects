@@ -1,0 +1,18 @@
+//primitives and objects
+//N--NULL
+//   N--Number
+//   S--Symbol
+//   S--String
+//   B--Boolean
+//   B--BigInt
+//   U--undefined
+//***********agar kuch naa daalein to we will get underfined for it */
+let f=Symbol("hey hey")
+console.log(typeof f)
+console.log(f)
+// ******OBJECTS IN Js....its a non primitive data typw///
+const item={
+    "aviral":true,
+    "who":null
+}
+console.log(item["aviral"])
