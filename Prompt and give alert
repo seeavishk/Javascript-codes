@@ -1,0 +1,7 @@
+const prompt = require("prompt-sync")(); //use this to run the prompt in your editor before writing this 'write npm init'
+
+let a=prompt("Enter your number")
+console.log(a)
+a=Number.parseInt(a)
+console.log(typeof(a))
+
