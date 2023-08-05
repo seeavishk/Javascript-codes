@@ -1,0 +1,20 @@
+let a=[2,4,5,3,2,1]
+let arr=a.map((value,index,array)=>{ //here the index and array are other parameters of the map
+       //map use hoga to make a new loop
+       console.log(value,index,array)
+    return value+1
+})
+console.log(a)
+console.log(arr)
+//...........FILTER method**********
+let arr2=[44,65,89,70,4,3,2]
+let a2=arr2.filter((a)=>{
+    return a<10
+})
+console.log(a2)
+//***********REDUCE METHOD ********/
+let arr3=[3,5,67,4,3,6]
+let a3=arr3.reduce((h1,h2)=>{
+    return h1+h2
+})
+console.log(a3)
