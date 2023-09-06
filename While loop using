@@ -1,0 +1,7 @@
+const prompt = require("prompt-sync")();
+
+let i=prompt("enter the number")
+while(i<10){
+    console.log(i)
+    i++;
+}
