@@ -1,0 +1,9 @@
+let a=[1,2,3,4,null,false]
+console.log(a)
+console.log(a[5])
+for(let i=0;i<5;i++){
+    console.log(a[i])
+}
+//console.log(typeof(a[4]))
+console.log(a.length)
+// console.log(a.UpperCase())
