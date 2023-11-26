@@ -1,0 +1,10 @@
+//***slice and splice****/
+// console.log("A",myArr)
+// const myn1=myArr.slice(1,3)
+// console.log(myn1)
+// console.log9("B",myArr)
+
+const myn2=myArr.splice(1,3)  //unhi ko rkha rhta hai jiski range hoti hai
+console.log(myn2)
+const myn1=myArr.slice(1,3) //will remove the elements of the range
+console.log(myn1)
