@@ -1,0 +1,25 @@
+//Number and maths for the operation
+const score=400
+//if wanted to get the number only
+const balance=new Number(300)
+// console.log(balance)
+
+// console.log(balance.toString().length)
+// console.log(balance.toFixed(1)) //it will make the precision of the decimal or show its value in that
+const othername=323.4234
+console.log(othername.toPrecision(4))
+const hundreds=303303933
+// console.log(hundreds.toLocaleString('en-IN'))
+  //*** MATHS****/
+console.log(Math)
+console.log(Math.abs(-2));
+console.log(Math.round(4.3))
+// more of maths are floor,ceiling ,min,max,random
+console.log(Math.random());
+console.log(Math.random()*10+1)
+
+const min=20
+const max=50
+console.log(math.floor(Math.random()*(max-min+1))+min)
+
+
