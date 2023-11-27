@@ -1,0 +1,19 @@
+//destructing of the object
+
+const course={
+    coursename:"web development",
+    price:"099",
+    courseinstructor:"aviral"
+}
+const {courseinstructor}=course
+console.log(courseinstructor)
+
+//can make the destructing of the object simply
+const {courseinstructor:instructor}=course;
+console.log(courseinstructor)
+
+// {
+//     name:"shuklaji",
+//     "coursename":"javascript tutorial",
+//     "price":"fress",
+// }
