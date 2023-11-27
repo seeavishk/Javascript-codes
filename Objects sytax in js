@@ -1,0 +1,27 @@
+//singleton object simply means making of object by the constructor
+//object.create
+const mysym=Symbol("key1")
+
+const jsuser={
+    name:"Aviral",
+    age: 20,
+    [mysym]:30,   //to make the symbol used to make this in the square bracket
+    location:"lko",
+    email:"avishkshukla@gmail.com",
+    isloggedin:false,
+    lastlogins:["Monday","tuesday","saturday"]
+     
+}
+console.log(jsuser.email)
+console.log(jsuser["email"])
+console.log(jsuser[mysym])
+Object.freeze(jsuser)  //it will make the value freeze
+//this is all object literal
+jsuser.greeting=function(){
+    console.log("hello aviral");
+}
+console.log(jsuser.greeting)
+jsuser.greeting=function(){
+    console.log( `hello aviral,${this.name}`);
+}
+console.log(jsuser.greeting)
