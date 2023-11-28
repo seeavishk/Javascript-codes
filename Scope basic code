@@ -1,0 +1,11 @@
+
+if(true){
+    let a=39
+    const b=59
+    var c=55
+    
+}
+
+console.log(a);
+console.log(b)
+console.log(c) //here c will give the value given but it should give the value like that but a and b will be undefined and the scope of the a,b is in the scope
