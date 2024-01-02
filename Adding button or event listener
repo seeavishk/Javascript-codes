@@ -1,0 +1,10 @@
+// Get a reference to the button element
+const button = document.getElementById("myButton");
+
+// Define the event listener function
+function handleClick() {
+  Alert("you just clicked me");
+}
+button.addEventListener("click",handleClick);
+// Add the event listener to the button
+
