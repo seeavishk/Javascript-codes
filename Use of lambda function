@@ -1,0 +1,7 @@
+// Get a reference to the button element
+const button = document.getElementById("myButton");
+
+// Add event listener to the button and using arrow function alert the message
+button.addEventListener("click", () => {
+  alert("Button clicked!");
+});
