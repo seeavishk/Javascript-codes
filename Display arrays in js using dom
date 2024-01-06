@@ -1,0 +1,42 @@
+const tasks = [
+  {
+    description: "Complete project proposal",
+    deadline: "2023-07-20",
+    done: false,
+  },
+  {
+    description: "Prepare presentation slides",
+    deadline: "2023-07-22",
+    done: false,
+  },
+  {
+    description: "Submit final report",
+    deadline: "2023-07-25",
+    done: true,
+  },
+];
+
+const taskList = document.getElementById("task-list");
+
+// Solution to the task
+for (let i = 0; i < tasks.length; i++) {
+  const task = tasks[i];
+
+  const taskItem = document.createElement("div");
+  taskItem.classList.add("task-item");
+
+  const descriptionElement = document.createElement("p");
+  descriptionElement.textContent = `Description: ${task.description}`;
+
+  const deadlineElement = document.createElement("p");
+  deadlineElement.textContent = `Deadline: ${task.deadline}`;
+
+  const doneStatusElement = document.createElement("p");
+  doneStatusElement.textContent = `Done: ${task.done ? "Yes" : "No"}`;
+
+  taskItem.appendChild(descriptionElement);
+  taskItem.appendChild(deadlineElement);
+  taskItem.appendChild(doneStatusElement);
+
+  taskList.appendChild(taskItem);
+}
