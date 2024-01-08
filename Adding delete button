@@ -1,0 +1,64 @@
+// Initial array of tasks
+const tasks = [
+  {
+    description: "Complete project proposal",
+    deadline: "2023-07-20",
+    done: false,
+  },
+  {
+    description: "Prepare presentation slides",
+    deadline: "2023-07-22",
+    done: false,
+  },
+];
+
+
+// Render the task list on the DOM
+function renderTaskList() {
+  const taskList = document.getElementById("task-list");
+  taskList.innerHTML = "";
+
+  for (let i = 0; i < tasks.length; i++) {
+    const task = tasks[i];
+
+    const taskItem = document.createElement("div");
+    taskItem.classList.add("task-item");
+
+    const descriptionElement = document.createElement("p");
+    descriptionElement.textContent = `Description: ${task.description}`;
+
+    const deadlineElement = document.createElement("p");
+    deadlineElement.textContent = `Deadline: ${task.deadline}`;
+
+    const doneStatusElement = document.createElement("p");
+    doneStatusElement.textContent = `Done: ${task.done ? "Yes" : "No"}`;
+
+    // Create the delete button
+    const deleteButton=document.createElement("button");
+    deleteButton.classList.add("delete-button")
+    deletebutton.textContent="Delete";
+    
+    // Add the class "delete-button"
+    deleteButton.addEventListener("click",()=>{
+        tasks.splice(idnex,1);
+        renderTaskList();
+    });
+    
+    // Set the text of the button to "Delete"
+    taskItem.appendChild(deleteButton);
+    renderTaskList
+    
+    // Add the event listener and delete the task, call the rerender for getting the updated DOM
+
+    taskItem.appendChild(descriptionElement);
+    taskItem.appendChild(deadlineElement);
+    taskItem.appendChild(doneStatusElement);
+    
+    // Append the delete button 
+
+    taskList.appendChild(taskItem);
+  }
+}
+
+// Display the initial task list on the DOM
+renderTaskList();
